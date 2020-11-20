@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const FooterContainer = styled.footer`
   position: absolute;
@@ -7,6 +8,7 @@ export const FooterContainer = styled.footer`
   width: 100%;
 
   height: 300px;
+
   background: #000;
   margin-top: 30px;
   @media screen and (max-device-width: 995px) {
@@ -17,23 +19,81 @@ export const FooterContainer = styled.footer`
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 60px;
     padding: 32px;
+    h2 {
+      align-self: flex-start;
+      margin-left: 8px;
+      margin-right: 8px;
+      text-align: center;
+    }
     @media screen and (max-device-width: 995px) {
       flex-direction: column;
       justify-content: space-around;
       margin-top: 30px;
       height: 100%;
-      div {
-        margin-bottom: 30px;
-      }
     }
     a {
       margin-right: 5px;
     }
   }
 `;
+export const LinksContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  min-height: 175px;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    div {
+      display: inline-block;
+    }
+  }
+  @media screen and (max-device-width: 995px) {
+    margin-bottom: 30px;
+    align-items: center;
+    div {
+      align-items: center;
+    }
+  }
+`;
+export const Test = styled.a`
+  text-decoration: none;
+  button {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #8257e6;
+    width: 100%;
+    min-width: 200px;
+    border-radius: 5px;
+    padding: 12px 32px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
 
+    text-decoration: none;
+    cursor: pointer;
+
+    display: flex;
+
+    max-width: 118px;
+    transition: background-color 0.2s;
+
+    @media screen and (max-device-width: 995px) {
+      font-size: 10px;
+      min-width: 150px;
+    }
+    &:hover {
+      background: ${(shade(0.2), '#8257ff')};
+    }
+  }
+`;
 export const WhoIM = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -53,6 +113,7 @@ export const WhoIM = styled.div`
       border-radius: 100%;
       width: 32px;
       height: 32px;
+      margin-right: 15px;
     }
     h5 {
       font-size: 16pt;

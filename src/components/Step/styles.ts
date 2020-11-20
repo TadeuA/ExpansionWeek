@@ -6,6 +6,9 @@ export const Steps = styled.div`
   max-width: 256px;
   background: #202024;
   border-radius: 5px;
+  @media screen and (max-device-width: 995px) {
+    height: 100%;
+  }
 
   div {
     display: flex;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import socrates from '../../assets/socrates.jpg';
+import socrates from '../../assets/socrates.png';
 
 export const Title = styled.h1`
   margin-top: 100px;
@@ -63,12 +63,18 @@ export const EmpatyXSympathy = styled.article`
 
   max-width: 600px;
   align-items: flex-end;
-
+  @media screen and (max-device-width: 365px) {
+    align-items: center;
+  }
   h4 {
     align-self: flex-end;
     font-size: 16pt;
     @media screen and (max-device-width: 995px) {
       margin-top: 14pt;
+    }
+    @media screen and (max-device-width: 365px) {
+      margin-top: 10pt;
+      text-align: center;
     }
   }
   Iframe {
@@ -79,6 +85,10 @@ export const EmpatyXSympathy = styled.article`
     @media screen and (max-device-width: 600px) {
       width: 355px;
       height: 199px;
+    }
+    @media screen and (max-device-width: 365px) {
+      width: 248px;
+      height: 139px;
     }
   }
 `;
@@ -193,7 +203,7 @@ export const Socrates = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  background: url(${socrates}) content;
+  background: url(${socrates}) no-repeat 60%;
 `;
 
 export const Center = styled.h2`

@@ -60,6 +60,7 @@ const stepsData: StepObject[] = [
 ];
 const LandingPage: React.FC = () => {
   const [steps, setSteps] = useState<StepObject[]>(stepsData);
+  const mark = '"';
   return (
     <>
       <Header />
@@ -119,9 +120,14 @@ const LandingPage: React.FC = () => {
         </div>
       </Main>
       <Socrates>
-        <Center>
-          Conheça-te a ti mesmo e conhecerás o universo e os deuses
-        </Center>
+        <div>
+          <Center>
+            {mark}
+            Conheça-te a ti mesmo e conhecerás o universo e os deuses
+            {mark}
+          </Center>
+          <p>Sócrates</p>
+        </div>
         <Left>
           O inicio da jornada da empatia começa, com o ato, de nos reconhecermos
           e aceitarmos nossas virtudes e defeitos. Só assim teremos uma evolução
