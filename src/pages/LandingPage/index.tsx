@@ -74,7 +74,7 @@ const LandingPage: React.FC = () => {
           </h3>
           <p>
             Com certeza você já ouviu essa expressão popular, que é bastante
-            válido para exemplificar a empatia. Resumidamete, empatia é, sentir
+            válida para exemplificar a empatia. Resumidamente, empatia é, sentir
             o que uma pessoa está sentindo, se colocar no lugar dela e ver o
             mundo como ela o enxerga. Trata-se de compreensão emocional! Ser
             empático é sentir a dor de quem está sofrendo, a alegria do outro
@@ -135,7 +135,7 @@ const LandingPage: React.FC = () => {
         </Left>
 
         <Right>
-          Compreendendo profundamente sues colegas de trabalho, pode gerar um
+          Compreendendo profundamente seus colegas de trabalho, pode gerar um
           laço muito forte, e tornar o ambiente mais harmónico.
         </Right>
       </Socrates>
@@ -170,13 +170,13 @@ const LandingPage: React.FC = () => {
       </StepsContainer>
       <Featured>
         <div>
-          <h2>Recrutadores vão lhe perseguir que nem loucos.</h2>
+          <h2>Recrutadores vão lhe perseguir feito loucos.</h2>
           <p>
-            Tornando isso um hábito, aprimorará constantemente diversas sofs
-            skill, se destacando na carreira. Por fim se tornará um proficional
-            cada vez melhor com hard skills e soft skills bem desenvolvidas,
-            alinhas e balanceadas. Com capacidade de se tornar um excelente
-            mentor ou líder.
+            Tornando isso um hábito, aprimorará constantemente diversas soft
+            skills, se destacando na carreira. Por fim se tornará um
+            profissional cada vez melhor com hard skills e soft skills bem
+            desenvolvidas, alinhas e balanceadas. Com capacidade de se tornar um
+            excelente mentor ou líder.
           </p>
         </div>
       </Featured>
