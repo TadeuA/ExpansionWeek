@@ -62,6 +62,9 @@ export const LinksContainer = styled.div`
   }
 `;
 export const Test = styled.a`
+  @media screen and (max-device-width: 995px) {
+    margin-top: 8px;
+  }
   text-decoration: none;
   button {
     border: none;
