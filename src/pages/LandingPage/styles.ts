@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import socrates from '../../assets/socrates.png';
+import { ImageComponents } from './interface';
 
 export const Title = styled.h1`
   margin-top: 100px;
   font-size: 64px;
   line-height: 1;
   text-align: center;
-  color: #e1e1e6;
+  color: ${({ theme }) => theme.colors['ice-light']};
   font-weight: 700;
   width: 100%;
   max-width: 615px;
@@ -37,7 +37,7 @@ export const Intro = styled.section`
   h3 {
     font-size: 18pt;
     line-height: 107%;
-    color: #e1e1e6;
+    color: ${({ theme }) => theme.colors['ice-light']};
     font-weight: 700;
     padding: 40px 0 24px 0;
     width: 100%;
@@ -49,7 +49,7 @@ export const Intro = styled.section`
   p {
     font-size: 14pt;
     line-height: 167%;
-    color: #a8a8b3;
+    color: ${({ theme }) => theme.colors['dark-light']};
     @media screen and (max-device-width: 995px) {
       font-size: 12pt;
     }
@@ -94,7 +94,7 @@ export const EmpatyXSympathy = styled.article`
 `;
 
 export const Main = styled.main`
-  background: #202024;
+  background: ${({ theme }) => theme.colors['somber-whistle']};
   width: 100%;
   border-radius: 5px;
   padding: 80px;
@@ -113,7 +113,7 @@ export const Main = styled.main`
       font-size: 54px;
       line-height: 56px;
       width: 100%;
-      color: #e1e1e6;
+      color: ${({ theme }) => theme.colors['ice-light']};
       margin-bottom: 20px;
       @media screen and (max-device-width: 995px) {
         font-size: 22pt;
@@ -130,7 +130,7 @@ export const Main = styled.main`
       p {
         font-size: 14pt;
         line-height: 156%;
-        color: #a8a8b3;
+        color: ${({ theme }) => theme.colors['dark-light']};
         width: 100%;
         i {
           margin-right: 4px;
@@ -178,7 +178,7 @@ export const Featured = styled.section`
       line-height: 58px;
       text-align: center;
       font-weight: bold;
-      color: #e1e1e6;
+      color: ${({ theme }) => theme.colors['ice-light']};
       padding-top: 40px;
       @media screen and (max-device-width: 995px) {
         font-size: 22pt;
@@ -188,7 +188,7 @@ export const Featured = styled.section`
       font-size: 18px;
       line-height: 28px;
       text-align: center;
-      color: #a8a8b3;
+      color: ${({ theme }) => theme.colors['dark-light']};
       padding-top: 24px;
       width: 100%;
       max-width: 710px;
@@ -199,11 +199,11 @@ export const Featured = styled.section`
     }
   }
 `;
-export const Socrates = styled.div`
+export const Socrates = styled.div<ImageComponents>`
   display: flex;
   flex: 1;
   flex-direction: column;
-  background: url(${socrates}) no-repeat 60%;
+  background: url(${({ image }) => image}) no-repeat 60%;
 `;
 
 export const Center = styled.h2`
@@ -211,7 +211,7 @@ export const Center = styled.h2`
   line-height: 58px;
   text-align: center;
   font-weight: bold;
-  color: #e1e1e6;
+  color: ${({ theme }) => theme.colors['ice-light']};
   padding-top: 40px;
   align-self: center;
   @media screen and (max-device-width: 995px) {
@@ -223,7 +223,7 @@ export const Left = styled.p`
   font-size: 18px;
   line-height: 28px;
   text-align: left;
-  color: #a8a8b3;
+  color: ${({ theme }) => theme.colors['dark-light']};
   padding-top: 24px;
   width: 100%;
   max-width: 510px;
@@ -231,7 +231,7 @@ export const Left = styled.p`
   max-width: 300px;
   padding: 32px;
   border-radius: 20px;
-  background: #000;
+  background: ${({ theme }) => theme.colors['the-shadow']};
   @media screen and (max-device-width: 995px) {
     margin-top: 20px;
     font-size: 12pt;
@@ -241,7 +241,7 @@ export const Right = styled.p`
   font-size: 18px;
   line-height: 28px;
   text-align: right;
-  color: #a8a8b3;
+  color: ${({ theme }) => theme.colors['ice-light']};
   padding-top: 24px;
   width: 100%;
   max-width: 510px;
@@ -249,7 +249,7 @@ export const Right = styled.p`
   max-width: 300px;
   padding: 32px;
   border-radius: 20px;
-  background: #000;
+  background: ${({ theme }) => theme.colors['the-shadow']};
   @media screen and (max-device-width: 995px) {
     margin-top: 20px;
     font-size: 12pt;

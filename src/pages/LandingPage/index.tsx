@@ -16,6 +16,7 @@ import {
 import Header from '../../components/Header';
 import Step from '../../components/Step';
 import Footer from '../../components/Footer';
+import socrates from '../../assets/socrates.png';
 
 interface StepObject {
   title: string;
@@ -119,7 +120,7 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </Main>
-      <Socrates>
+      <Socrates image={socrates}>
         <div>
           <Center>
             {mark}
