@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
 
   height: 300px;
 
-  background: #000;
+  background: ${({ theme }) => theme.colors['the-shadow']};
   margin-top: 30px;
   @media screen and (max-device-width: 995px) {
     height: 500px;
@@ -69,8 +69,8 @@ export const Test = styled.a`
   button {
     border: none;
     outline: none;
-    color: #fff;
-    background: #8257e6;
+    color: ${({ theme }) => theme.colors['the-light']};
+    background: ${({ theme }) => theme.colors['rocketseat-love']};
     width: 100%;
     min-width: 200px;
     border-radius: 5px;
@@ -93,7 +93,8 @@ export const Test = styled.a`
       min-width: 150px;
     }
     &:hover {
-      background: ${(shade(0.2), '#8257ff')};
+      background: ${(shade(0.2),
+      ({ theme }) => theme.colors['rocketseat-cool'])};
     }
   }
 `;
@@ -124,7 +125,7 @@ export const WhoIM = styled.div`
     a {
       padding: 8px;
       border-radius: 5px;
-      background: #202024;
+      background: ${({ theme }) => theme.colors['somber-whistle']};
       display: flex;
       justify-content: center;
       align-items: center;
