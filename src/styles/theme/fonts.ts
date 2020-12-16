@@ -1,3 +1,4 @@
 export const fonts = {
-  label: 'BigShouldersText-Light',
+  'text-regular': '"Roboto", sans-serif',
+  'text-mono': '"Roboto Mono", monospace',
 };

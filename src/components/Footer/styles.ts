@@ -22,6 +22,8 @@ export const FooterContainer = styled.footer`
     margin-top: 60px;
     padding: 32px;
     h2 {
+      font-family: ${({ theme }) => theme.fonts['text-regular']};
+
       align-self: flex-start;
       margin-left: 8px;
       margin-right: 8px;
@@ -34,6 +36,8 @@ export const FooterContainer = styled.footer`
       height: 100%;
     }
     a {
+      font-family: ${({ theme }) => theme.fonts['text-regular']};
+
       margin-right: 5px;
     }
   }
@@ -62,6 +66,8 @@ export const LinksContainer = styled.div`
   }
 `;
 export const Test = styled.a`
+  font-family: ${({ theme }) => theme.fonts['text-regular']};
+
   @media screen and (max-device-width: 995px) {
     margin-top: 15px;
   }
@@ -79,6 +85,7 @@ export const Test = styled.a`
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
+    font-family: ${({ theme }) => theme.fonts['text-regular']};
 
     text-decoration: none;
     cursor: pointer;
@@ -120,9 +127,11 @@ export const WhoIM = styled.div`
       margin-right: 15px;
     }
     h5 {
+      font-family: ${({ theme }) => theme.fonts['text-regular']};
       font-size: 16pt;
     }
     a {
+      font-family: ${({ theme }) => theme.fonts['text-regular']};
       padding: 8px;
       border-radius: 5px;
       background: ${({ theme }) => theme.colors['somber-whistle']};

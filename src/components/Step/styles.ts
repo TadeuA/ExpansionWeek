@@ -20,6 +20,8 @@ export const Steps = styled.div`
     position: relative;
     border-bottom: 1px solid ${({ theme }) => theme.colors['somber-music']};
     strong {
+      font-family: ${({ theme }) => theme.fonts['text-regular']};
+
       font-size: 10px;
       line-height: 12px;
       background: ${({ theme }) => theme.colors['somber-music']};
@@ -29,8 +31,10 @@ export const Steps = styled.div`
       color: ${({ theme }) => theme.colors['the-light']};
     }
     span {
+      font-family: ${({ theme }) => theme.fonts['text-regular']};
+
       font-weight: bold;
-      font-size: 16px;
+      font-size: 12px;
       line-height: 19px;
       color: ${({ theme }) => theme.colors['somber-whisper']};
     }
@@ -38,20 +42,26 @@ export const Steps = styled.div`
   main {
     padding: 32px;
     h3 {
-      font-size: 28px;
+      font-family: ${({ theme }) => theme.fonts['text-regular']};
+
+      font-size: 22px;
       line-height: 119%;
-      font-weight: bold;
+      font-weight: 700;
       color: ${({ theme }) => theme.colors['ice-light']};
     }
     h4 {
+      font-family: ${({ theme }) => theme.fonts['text-regular']};
+
       font-weight: 500;
-      font-size: 22px;
+      font-size: 18px;
       line-height: 125%;
       color: ${({ theme }) => theme.colors['happy-success']};
       padding: 24px 0;
     }
     p {
-      font-size: 16px;
+      font-family: ${({ theme }) => theme.fonts['text-regular']};
+
+      font-size: 14px;
       line-height: 156%;
       color: ${({ theme }) => theme.colors['dark-light']};
     }

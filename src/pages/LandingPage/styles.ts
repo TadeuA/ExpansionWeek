@@ -7,6 +7,7 @@ export const Title = styled.h1`
   line-height: 1;
   text-align: center;
   color: ${({ theme }) => theme.colors['ice-light']};
+  font-family: ${({ theme }) => theme.fonts['text-regular']};
   font-weight: 700;
   width: 100%;
   max-width: 615px;
@@ -35,10 +36,11 @@ export const Intro = styled.section`
   flex-direction: column;
   max-width: 400px;
   h3 {
+    font-family: ${({ theme }) => theme.fonts['text-regular']};
     font-size: 18pt;
     line-height: 107%;
     color: ${({ theme }) => theme.colors['ice-light']};
-    font-weight: 700;
+    font-weight: 500;
     padding: 40px 0 24px 0;
     width: 100%;
     @media screen and (max-device-width: 995px) {
@@ -47,6 +49,7 @@ export const Intro = styled.section`
   }
 
   p {
+    font-family: ${({ theme }) => theme.fonts['text-regular']};
     font-size: 14pt;
     line-height: 167%;
     color: ${({ theme }) => theme.colors['dark-light']};
@@ -67,6 +70,7 @@ export const EmpatyXSympathy = styled.article`
     align-items: center;
   }
   h4 {
+    font-family: ${({ theme }) => theme.fonts['text-regular']};
     align-self: flex-end;
     font-size: 16pt;
     @media screen and (max-device-width: 995px) {
@@ -110,6 +114,8 @@ export const Main = styled.main`
     min-width: 100%;
 
     h2 {
+      font-family: ${({ theme }) => theme.fonts['text-regular']};
+      font-weight: 700;
       font-size: 54px;
       line-height: 56px;
       width: 100%;
@@ -119,6 +125,8 @@ export const Main = styled.main`
         font-size: 22pt;
       }
       p {
+        font-family: ${({ theme }) => theme.fonts['text-regular']};
+
         @media screen and (max-device-width: 995px) {
           font-size: 12pt;
         }
@@ -128,6 +136,8 @@ export const Main = styled.main`
       display: flex;
       flex-direction: column;
       p {
+        font-family: ${({ theme }) => theme.fonts['text-regular']};
+
         font-size: 14pt;
         line-height: 156%;
         color: ${({ theme }) => theme.colors['dark-light']};
@@ -141,6 +151,8 @@ export const Main = styled.main`
         display: flex;
         flex-direction: column;
         p {
+          font-family: ${({ theme }) => theme.fonts['text-regular']};
+
           margin-top: 0;
         }
       }
@@ -174,10 +186,12 @@ export const Featured = styled.section`
     max-width: 1120px;
     margin: 0 auto;
     h2 {
+      font-family: ${({ theme }) => theme.fonts['text-regular']};
+
       font-size: 54px;
       line-height: 58px;
       text-align: center;
-      font-weight: bold;
+      font-weight: 700;
       color: ${({ theme }) => theme.colors['ice-light']};
       padding-top: 40px;
       @media screen and (max-device-width: 995px) {
@@ -185,6 +199,8 @@ export const Featured = styled.section`
       }
     }
     p {
+      font-family: ${({ theme }) => theme.fonts['text-regular']};
+
       font-size: 18px;
       line-height: 28px;
       text-align: center;
@@ -210,7 +226,9 @@ export const Center = styled.h2`
   font-size: 54px;
   line-height: 58px;
   text-align: center;
-  font-weight: bold;
+  font-family: ${({ theme }) => theme.fonts['text-mono']};
+
+  font-weight: 700;
   color: ${({ theme }) => theme.colors['ice-light']};
   padding-top: 40px;
   align-self: center;
@@ -220,6 +238,8 @@ export const Center = styled.h2`
 `;
 
 export const Left = styled.p`
+  font-family: ${({ theme }) => theme.fonts['text-regular']};
+
   font-size: 18px;
   line-height: 28px;
   text-align: left;
@@ -238,6 +258,8 @@ export const Left = styled.p`
   }
 `;
 export const Right = styled.p`
+  font-family: ${({ theme }) => theme.fonts['text-regular']};
+
   font-size: 18px;
   line-height: 28px;
   text-align: right;
