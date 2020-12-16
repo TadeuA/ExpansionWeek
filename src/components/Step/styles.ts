@@ -4,7 +4,7 @@ export const Steps = styled.div`
   height: 550px;
   width: 100%;
   max-width: 256px;
-  background: #202024;
+  background: ${({ theme }) => theme.colors['somber-whistle']};
   border-radius: 5px;
   @media screen and (max-device-width: 995px) {
     height: 100%;
@@ -18,21 +18,21 @@ export const Steps = styled.div`
     align-items: center;
     padding: 24px 32px;
     position: relative;
-    border-bottom: 1px solid #323238;
+    border-bottom: 1px solid ${({ theme }) => theme.colors['somber-music']};
     strong {
       font-size: 10px;
       line-height: 12px;
-      background: #323238;
+      background: ${({ theme }) => theme.colors['somber-music']};
       border-radius: 13px;
       padding: 6px 12px;
       text-transform: uppercase;
-      color: #ffffff;
+      color: ${({ theme }) => theme.colors['the-light']};
     }
     span {
       font-weight: bold;
       font-size: 16px;
       line-height: 19px;
-      color: #41414d;
+      color: ${({ theme }) => theme.colors['somber-whisper']};
     }
   }
   main {
@@ -41,19 +41,19 @@ export const Steps = styled.div`
       font-size: 28px;
       line-height: 119%;
       font-weight: bold;
-      color: #e1e1e6;
+      color: ${({ theme }) => theme.colors['ice-light']};
     }
     h4 {
       font-weight: 500;
       font-size: 22px;
       line-height: 125%;
-      color: #04d361;
+      color: ${({ theme }) => theme.colors['happy-success']};
       padding: 24px 0;
     }
     p {
       font-size: 16px;
       line-height: 156%;
-      color: #a8a8b3;
+      color: ${({ theme }) => theme.colors['dark-light']};
     }
   }
 `;
